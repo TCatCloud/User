@@ -1,0 +1,31 @@
+name: Update
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Update
+      run: |
+        bash ./.github/Update.sh
+        git config --global user.name TCatCloud
+        git checkout --orphan latest_branch
+        git add -A
+        git commit -am "Update"
+        git branch -D master
+        git branch -m master
+        git push -f origin master
+        curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/env.js
+        curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/umi.js
+        curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/umi.css
+        curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/vendors.async.js
+        curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/components.async.js
+        curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/components.chunk.css
+        curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/theme/black.css
+        curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/theme/black.css
+        curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/theme/default.css
+        curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/theme/darkblue.css
+        curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/static/darkblue.css
