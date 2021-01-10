@@ -1,2 +1,12 @@
-sed -i 's?./theme/?https://cdn.jsdelivr.net/gh/TCatCloud/User@master/theme/?g' umi.js
-sed -i 's?url(./static/?url(https://cdn.jsdelivr.net/gh/TCatCloud/User@master/static/?g' umi.css
+sleep 1m
+curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/env.js
+curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/umi.js
+curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/umi.css
+curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/vendors.async.js
+curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/components.async.js
+curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/components.chunk.css
+curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/theme/black.css
+curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/theme/black.css
+curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/theme/default.css
+curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/theme/darkblue.css
+curl https://purge.jsdelivr.net/gh/TCatCloud/User@master/static/darkblue.css
