@@ -1,1 +1,1 @@
-window.settings={title:"TCat云服务",description:"可能是最走心的云服务商",host:"https://api.tcat.cc",theme:{sidebar:"light",header:"dark",color:"default"},background_url:"https://jpg.im.sb/images/2022/07/29/28675fc21c1982acfb4ea30bb24ec35b.jpg",i18n:["zh-CN","en-US","ja-JP","vi-VN","ko-KR","zh-TW"]};
+window.settings={title:'TCat云服务',description:'可能是最走心的云服务商',host:'https://api.tcat.cc',theme:{sidebar:'light',header:'dark',color:'default'},background_url:'https://jpg.im.sb/images/2022/07/29/28675fc21c1982acfb4ea30bb24ec35b.jpg',i18n:['zh-CN','en-US','ja-JP','vi-VN','ko-KR','zh-TW']}
