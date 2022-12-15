@@ -1,1 +1,1 @@
-window.settings={title:'TCat云服务',description:'可能是最走心的云服务商',host:'https://api.tcat.cc',theme:{sidebar:'light',header:'dark',color:'default'},background_url:'https://cdn.staticaly.com/gh/TCatCloud/Static/master/TCatBG1.jpg',i18n:['zh-CN','en-US','ja-JP','vi-VN','ko-KR','zh-TW']}
+window.settings={title:"TCat云服务",description:"可能是最走心的云服务商",host:"https://api.tcat.cc",theme:{sidebar:"light",header:"dark",color:"default"},i18n:["zh-CN","en-US","ja-JP","vi-VN","ko-KR","zh-TW","fa-IR"]};
